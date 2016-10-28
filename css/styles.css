@@ -1,0 +1,482 @@
+/* ========================================  CSS LINT =============================================*/
+
+
+/*csslint order-alphabetical:false,outline-none:false, universal-selector:false, box-model:false, qualified-headings: false, unique-headings:false, box-sizing:false, fallback-colors:false compatible-vendor-prefixes:false*/
+
+
+/* ========================================  EINDE CSS LINT =============================================*/
+
+
+/* ========================================  CSS RESET =============================================*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+/* =========================================  EINDE CSS RESET  =============================================*/
+
+@font-face {
+    font-family: 'NexaBold';
+    src: url('../font/NexaBold.otf');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NexaLight';
+    src: url('../font/NexaLight.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F3E5D9;
+    Margin: 0;
+    font-family: 'NexaBold', sans-serif;
+}
+
+h1 {
+    color: #50B069;
+    text-align: center;
+    font-size: 1.5em;
+    margin-top: 1em;
+}
+
+h2 {
+    color: #50B069;
+    text-align: center;
+    position: relative;
+    font-size: 1em;
+    margin-top: 0.2em;
+    /*    margin:auto;*/
+}
+
+h3 {
+    color: #E63C6B;
+    font-family: 'NexaBold';
+    font-size: 1.7em;
+    margin-bottom: -0.5em;
+    margin-top: 1em;
+    margin-left: 0.5em;
+}
+
+h4 {
+    color: #2C3284;
+    font-family: 'Nexalight';
+    font-size: 1em;
+    margin-top: -0.05em;
+    margin-left: 1em;
+}
+
+h5 {
+    color: #2C3284;
+    font-family: 'Nexalight';
+    font-size: 0.8em;
+    margin-left: -5em;
+    text-align: center;
+}
+
+
+/* ========================================  EINDE FONT =============================================*/
+
+
+/*==========================================INLOGGEN ===================================================*/
+
+.inloggen body {
+    margin: 0;
+    background-image: url(../image/dubai1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 50em;
+}
+
+.legend {
+    background: white;
+    width: 24em;
+    margin-left: -4em;
+    margin-top: -7em;
+    padding: 1em;
+    font-size: 1em;
+    font-weight: normal;
+    text-align: center;
+    border-top-left-radius: 0.5em;
+    border-top-right-radius: 0.5em;
+    color: #3AD66B;
+}
+
+.inloggen {
+    /*    display: block;*/
+    padding: 4em;
+    width: 30%;
+    margin-left: 25em;
+    margin-top: 7em;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-bottom-left-radius: 0.5em;
+    border-bottom-right-radius: 0.5em;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+.inloggen p {
+    margin-top: 1em;
+    padding: 0.5em;
+    margin-left: -0.5em;
+}
+
+.inloggen input {
+    border-radius: 0.5em;
+    width: 20em;
+    height: 2.5em;
+}
+
+.inloggen button {
+    border-radius: 1em;
+    width: 10em;
+    height: 2em;
+    background-color: #E63C6B;
+    font-family: 'NexaBold';
+    color: white;
+    padding: 0;
+    margin: 1em;
+    margin-left: 2em;
+}
+
+.inloggen button:hover {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+
+/*
+legend:link {
+    color: #ffffff;
+}
+*/
+
+h5:link {
+    color: #000000;
+}
+
+
+/*========================================== REGISTREREN ===================================================*/
+
+
+/* ========================================  BEGIN HEADER & NAV =============================================*/
+
+header {
+    width: 100%;
+}
+
+header section:first-of-type {
+    margin: 0;
+    background-image: url(../image/beach.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 25em;
+}
+
+header span {
+    display: block;
+    margin-left: 3em;
+    margin-top: 1em;
+    padding: 1.8rem;
+    height: 13rem;
+    width: 13rem;
+    background-color: #ffffff;
+    border-radius: 50%;
+}
+
+li>img {
+    width: 2em;
+    margin: -1em;
+    margin-left: 0.5em;
+    margin-right: 0.2em;
+}
+
+header ul {
+    left: -5%;
+    background-color: RGBA(71, 72, 75, 0.7);
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: flex-start;
+    margin-top: 0;
+}
+
+li {
+    padding: 1.3em;
+    padding-left: .5%;
+    font-family: NexaLight;
+    font-size: 0.7em;
+    color: white;
+}
+
+li>a:visited {
+    color: #ffffff;
+}
+
+li:hover {
+    color: #E63C6B;
+}
+
+
+/*
+input[type=text] {
+    width: 15em;
+    box-sizing: border-box;
+    float: left;
+    border: 0.1em solid #ccc;
+    border-radius: 1.5625em;
+    font-size: 0.5em;
+    background-color: rgba(255, 255, 255, 0.15);
+    background-position: 3em 3em;
+    background-repeat: no-repeat;
+    padding: 0.5em 2em 0.5em 2em;
+    margin-top: 1em;
+    transition: width 0.4s ease-in-out;
+    color: white;
+}
+*/
+
+img {
+    left: -15%;
+    margin-top: 0.2em;
+}
+
+
+/* ========================================  BEGIN HEADER & NAV =============================================*/
+
+
+/* ========================================  BEGIN CONTAINER =============================================*/
+
+.flex-container {
+    /*    padding: 0.5em;*/
+    margin: 0;
+    clear: both;
+    width: 100%;
+    list-style: none;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.flex-item {
+    background: #ffffff;
+    padding: 0.05em;
+    width: 13em;
+    height: 30em;
+    border-radius: 1em;
+    margin-bottom: 2em;
+    margin-top: 4em;
+    /*Value wijzigen */
+}
+
+.flex-item img {
+    width: 100%;
+    height: 40%;
+    opacity: 0.4;
+    margin-top: 2em;
+    margin-bottom: 0.5em;
+}
+
+
+/*================= BUTTONS =================*/
+
+button {
+    width: 20em;
+    height: 2.5em;
+    border-style: none;
+    border-radius: 1em;
+    background-color: #E63C6B;
+    padding: -0.5em;
+    margin-top: 3.5em;
+    margin-left: 1.5em;
+    font-family: 'Nexabold';
+    font-size: 1em;
+    color: white;
+}
+
+
+/* ========================================  EINDE CONTAINER =============================================*/
+
+
+/* ========================================  BEGIN MEDIAQUERIES =============================================*/
+
+
+/* Super Grote Desktop */
+
+@media only screen and (max-width:120.063em) {
+    .flex-item {
+        width: 25%;
+    }
+    button {
+        width: 85%;
+    }
+}
+
+/* Desktop */
+
+@media only screen and (max-width:90em) {
+    .flex-item {
+        /*  Het is handig om een background color te gebruiken bijv background-color: purple;*/
+        width: 25%;
+    }
+}
+
+/* Tablet */
+
+@media only screen and (max-width:64em) {
+    .flex-item {
+        width: 35%;
+    }
+}
+
+/* Phone */
+
+@media only screen and (max-width:40em) {
+    .flex-item {
+        width: 55%;
+    }
+    input[type=text] {
+        display: none;
+    }
+}
